@@ -96,7 +96,7 @@ class SerializableNotificationTests: XCTestCase {
         }
     }
 
-    private struct TestNotification: SerializableNotification {
+    private struct TestNotification: SerializableNotification, DeserializableNotification {
         let string: String
         let number: Int
 

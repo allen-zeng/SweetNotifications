@@ -1,12 +1,16 @@
-public protocol SerializableNotification {
+public protocol DeserializableNotification: NamedNotification {
     init(userInfo: [AnyHashable: Any]) throws
+}
 
-    static var notificationName: Notification.Name { get }
-
+public protocol SerializableNotification: NamedNotification {
     func toUserInfo() -> [AnyHashable: Any]?
 }
 
-public extension SerializableNotification {
+public protocol NamedNotification {
+    static var notificationName: Notification.Name { get }
+}
+
+public extension NamedNotification {
     public static var notificationName: Notification.Name {
         return Notification.Name("\(Self.self)")
     }

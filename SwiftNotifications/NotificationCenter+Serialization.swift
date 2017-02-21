@@ -1,6 +1,6 @@
 public extension NotificationCenter {
-    public func watch<T: SerializableNotification>(
-        _ object: AnyObject? = nil,
+    public func watch<T: DeserializableNotification>(
+        object: AnyObject? = nil,
         queue: OperationQueue = OperationQueue.main,
         handler: @escaping (T) -> Void) -> NSObjectProtocol
     {
