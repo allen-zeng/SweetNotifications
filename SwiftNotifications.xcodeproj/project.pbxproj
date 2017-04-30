@@ -10,6 +10,7 @@
 		9F039E421E5C6FB400250555 /* DeserializableNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F039E3F1E5C6FB400250555 /* DeserializableNotification.swift */; };
 		9F039E431E5C6FB400250555 /* NamedNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F039E401E5C6FB400250555 /* NamedNotification.swift */; };
 		9F039E441E5C6FB400250555 /* NotificationSerializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F039E411E5C6FB400250555 /* NotificationSerializationError.swift */; };
+		9F2F6A8E1EB602C80002616F /* UIKeyboardNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F6A8D1EB602C80002616F /* UIKeyboardNotifications.swift */; };
 		9F7AA9C51E0CF76100F01F62 /* NotificationCenter+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AA9C11E0CF76100F01F62 /* NotificationCenter+Serialization.swift */; };
 		9F7AA9C61E0CF76100F01F62 /* SerializableNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AA9C21E0CF76100F01F62 /* SerializableNotification.swift */; };
 		9F7AA9C71E0CF76100F01F62 /* SwiftNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7AA9C31E0CF76100F01F62 /* SwiftNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +32,7 @@
 		9F039E3F1E5C6FB400250555 /* DeserializableNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeserializableNotification.swift; path = SwiftNotifications/DeserializableNotification.swift; sourceTree = SOURCE_ROOT; };
 		9F039E401E5C6FB400250555 /* NamedNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NamedNotification.swift; path = SwiftNotifications/NamedNotification.swift; sourceTree = SOURCE_ROOT; };
 		9F039E411E5C6FB400250555 /* NotificationSerializationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationSerializationError.swift; path = SwiftNotifications/NotificationSerializationError.swift; sourceTree = SOURCE_ROOT; };
+		9F2F6A8D1EB602C80002616F /* UIKeyboardNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIKeyboardNotifications.swift; path = SwiftNotifications/UIKeyboardNotifications/UIKeyboardNotifications.swift; sourceTree = SOURCE_ROOT; };
 		9F7AA9C01E0CF76100F01F62 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftNotifications/Info.plist; sourceTree = SOURCE_ROOT; };
 		9F7AA9C11E0CF76100F01F62 /* NotificationCenter+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+Serialization.swift"; path = "SwiftNotifications/NotificationCenter+Serialization.swift"; sourceTree = SOURCE_ROOT; };
 		9F7AA9C21E0CF76100F01F62 /* SerializableNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SerializableNotification.swift; path = SwiftNotifications/SerializableNotification.swift; sourceTree = SOURCE_ROOT; };
@@ -60,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F2F6A8C1EB602B10002616F /* UIKeyboardNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				9F2F6A8D1EB602C80002616F /* UIKeyboardNotifications.swift */,
+			);
+			name = UIKeyboardNotifications;
+			sourceTree = "<group>";
+		};
 		9FBE0F4B1E095EB600604C8F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		9FBE0F571E095EB600604C8F /* SwiftNotifications */ = {
 			isa = PBXGroup;
 			children = (
+				9F2F6A8C1EB602B10002616F /* UIKeyboardNotifications */,
 				9F039E3F1E5C6FB400250555 /* DeserializableNotification.swift */,
 				9F7AA9C01E0CF76100F01F62 /* Info.plist */,
 				9F039E401E5C6FB400250555 /* NamedNotification.swift */,
@@ -219,6 +230,7 @@
 				9F039E431E5C6FB400250555 /* NamedNotification.swift in Sources */,
 				9F039E441E5C6FB400250555 /* NotificationSerializationError.swift in Sources */,
 				9F039E421E5C6FB400250555 /* DeserializableNotification.swift in Sources */,
+				9F2F6A8E1EB602C80002616F /* UIKeyboardNotifications.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

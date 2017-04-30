@@ -13,6 +13,14 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '9.0'
   s.requires_arc = true
 
-  s.source_files = 'SwiftNotifications/*.swift'
+  s.subspec 'Core' do |ss|
+    ss.source_files = 'SwiftNotifications/*.swift'
+    ss.frameworks = 'Foundation'
+  end
 
+  s.subspec 'UIKeyboard' do |ss|
+    ss.ios.source_files = 'SwiftNotifications/UIKeyboardNotifications/*.swift'
+    ss.ios.frameworks = 'UIKit'
+    ss.dependency 'SwiftNotifications/Core'
+  end
 end
