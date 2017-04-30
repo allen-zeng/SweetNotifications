@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9FBE0F541E095EB600604C8F"
-               BuildableName = "SwiftNotifications.framework"
-               BlueprintName = "SwiftNotifications"
+               BlueprintIdentifier = "9F19FFDF1E5F955F0046013D"
+               BuildableName = "SwiftNotificationsUITestHost.app"
+               BlueprintName = "SwiftNotificationsUITestHost"
                ReferencedContainer = "container:SwiftNotifications.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,19 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9FBE0F5D1E095EB600604C8F"
-               BuildableName = "SwiftNotificationsTests.xctest"
-               BlueprintName = "SwiftNotificationsTests"
-               ReferencedContainer = "container:SwiftNotifications.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F19FFD31E5F953D0046013D"
-               BuildableName = "SwiftNotificationsUITests.xctest"
-               BlueprintName = "SwiftNotificationsUITests"
+               BlueprintIdentifier = "9F19FFFE1E5F96770046013D"
+               BuildableName = "asdfadsfasdf.xctest"
+               BlueprintName = "asdfadsfasdf"
                ReferencedContainer = "container:SwiftNotifications.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -52,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9FBE0F541E095EB600604C8F"
-            BuildableName = "SwiftNotifications.framework"
-            BlueprintName = "SwiftNotifications"
+            BlueprintIdentifier = "9F19FFDF1E5F955F0046013D"
+            BuildableName = "SwiftNotificationsUITestHost.app"
+            BlueprintName = "SwiftNotificationsUITestHost"
             ReferencedContainer = "container:SwiftNotifications.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -71,15 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9FBE0F541E095EB600604C8F"
-            BuildableName = "SwiftNotifications.framework"
-            BlueprintName = "SwiftNotifications"
+            BlueprintIdentifier = "9F19FFDF1E5F955F0046013D"
+            BuildableName = "SwiftNotificationsUITestHost.app"
+            BlueprintName = "SwiftNotificationsUITestHost"
             ReferencedContainer = "container:SwiftNotifications.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -89,15 +80,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9FBE0F541E095EB600604C8F"
-            BuildableName = "SwiftNotifications.framework"
-            BlueprintName = "SwiftNotifications"
+            BlueprintIdentifier = "9F19FFDF1E5F955F0046013D"
+            BuildableName = "SwiftNotificationsUITestHost.app"
+            BlueprintName = "SwiftNotificationsUITestHost"
             ReferencedContainer = "container:SwiftNotifications.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
