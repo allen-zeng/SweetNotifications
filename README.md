@@ -110,7 +110,7 @@ func testInitWithUserInfo_sourceStringIsValid_sourceSetCorrectly() {
 
 # Roadmap
 - [x] add global error handler
-- [ ] add system notifications types
+- [x] add keyboard notifications types
 - [ ] auto-deregistration of listeners
 - [ ] CI
 - [ ] Carthage and SPM support(?)
