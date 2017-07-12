@@ -10,7 +10,8 @@ public extension NotificationCenter {
             queue: queue,
             using: { notification in
                 guard let userInfo = notification.userInfo else {
-                    fatalError("Serializable notifications require userInfo")
+                    sweetNotificationsGlobalErrorHandler(NotificationSerializationError.noUserInfo, "\(T.self)")
+                    return
                 }
 
                 do {
@@ -18,7 +19,7 @@ public extension NotificationCenter {
 
                     handler(serializedNotification)
                 } catch {
-                    fatalError("Error during deserialization of notification: \(error)")
+                    sweetNotificationsGlobalErrorHandler(error, "\(T.self)")
                 }
             })
     }

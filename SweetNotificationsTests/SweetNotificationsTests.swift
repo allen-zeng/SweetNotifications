@@ -84,6 +84,60 @@ class SerializableNotificationTests: XCTestCase {
         }
     }
 
+    func testWatchForSerializableNotification_missingUserInfo_globalErrorHandlerCalled() {
+        runAsyncTest { expectation in
+            sweetNotificationsGlobalErrorHandler = { (error, _) in
+                switch error {
+                case NotificationSerializationError.noUserInfo:
+                    // success
+                    break
+                default:
+                    XCTFail("Unexpected error: \(error)")
+                }
+
+                expectation.fulfill()
+            }
+
+            listener = NotificationCenter.default.watch { (_: TestNotification) in
+                XCTFail("Unexpected success. Expected global notification error handler to be called")
+
+                expectation.fulfill()
+            }
+
+            NotificationCenter.default.post(
+                name: TestNotification.notificationName,
+                object: nil,
+                userInfo: nil)
+        }
+    }
+
+    func testWatchForSerializableNotification_errorIsThrownDuringSerialization_globalErrorHandlerCalled() {
+        runAsyncTest { expectation in
+            sweetNotificationsGlobalErrorHandler = { (error, _) in
+                switch error {
+                case NotificationSerializationError.missingRequiredInfo:
+                    // success
+                    break
+                default:
+                    XCTFail("Unexpected error: \(error)")
+                }
+
+                expectation.fulfill()
+            }
+
+            listener = NotificationCenter.default.watch { (_: TestNotification) in
+                XCTFail("Unexpected success. Expected global notification error handler to be called")
+
+                expectation.fulfill()
+            }
+
+            NotificationCenter.default.post(
+                name: TestNotification.notificationName,
+                object: nil,
+                userInfo: ["string": "does not matter because number is missing"])
+        }
+    }
+
     private func runAsyncTest(testBody: (XCTestExpectation) -> Void) {
         let expectation = self.expectation(description: #function)
 

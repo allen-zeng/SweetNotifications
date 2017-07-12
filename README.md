@@ -109,7 +109,7 @@ func testInitWithUserInfo_sourceStringIsValid_sourceSetCorrectly() {
 ```
 
 # Roadmap
-- [ ] add global error handler
+- [x] add global error handler
 - [ ] add system notifications types
 - [ ] auto-deregistration of listeners
 - [ ] CI
