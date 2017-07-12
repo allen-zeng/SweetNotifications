@@ -1,4 +1,4 @@
-# SwiftNotifications
+# SweetNotifications
 The NotificationCenter is a very useful tool. But using the API in Foundation is verbose and driven entirely by strings and values typed `Any`. Using these values every time a notification is needed is just awkward.
 
 Using generics in Swift, we can make this much nicer, so we can focus on using the contents of a strongly typed notification.
@@ -6,11 +6,11 @@ Using generics in Swift, we can make this much nicer, so we can focus on using t
 ## Quick Start
 Install via CocoaPods
 ```ruby
-pod 'SwiftNotifications'
+pod 'SweetNotifications'
 ```
 
 ### UIKeyboard notifications
-UIKeyboard notifications are incorporated under the subspec `SwiftNotifications/UIKeyboard`. The 4 types of notifications are:
+UIKeyboard notifications are incorporated under the subspec `SweetNotifications/UIKeyboard`. The 4 types of notifications are:
 - `UIKeyboardWillShowNotification`
 - `UIKeyboardDidShowNotification`
 - `UIKeyboardWillHideNotification`
@@ -43,9 +43,9 @@ listener = NotificationCenter.default.watch(for: Notification.Name.UIApplication
 As of this moment, manual deregistration is still required.
 
 ## Custom notification types
-It's easy to write your own notification types by adopting `SwiftNotification`:
+It's easy to write your own notification types by adopting `SweetNotification`:
 ```swift
-struct ValueChangedNotification: SwiftNotification {
+struct ValueChangedNotification: SweetNotification {
     let source: Source
 
     init(userInfo: [AnyHashable: Any]) throws {

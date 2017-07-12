@@ -12,7 +12,7 @@
         <!--Entry View Controller-->
         <scene sceneID="Tsc-lN-fpS">
             <objects>
-                <viewController id="gX0-mp-3OL" customClass="EntryViewController" customModule="SwiftNotificationsUITestHost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gX0-mp-3OL" customClass="EntryViewController" customModule="SweetNotificationsUITestHost" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ea3-9V-Jbx"/>
                         <viewControllerLayoutGuide type="bottom" id="4Ng-S3-XrL"/>
@@ -70,7 +70,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftNotificationsUITestHost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SweetNotificationsUITestHost" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

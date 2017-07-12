@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SwiftNotifications.xcodeproj">
+      location = "self:/Users/allen/Documents/Dev/SweetNotifications/SweetNotifications.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwiftNotificationsUITestHost
+//  SweetNotificationsUITestHost
 //
 //  Created by Allen on 24/2/17.
 //  Copyright © 2017 Allen. All rights reserved.

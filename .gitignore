@@ -66,4 +66,6 @@ fastlane/test_output
 
 /.bundle/
 
-/SwiftNotifications.sublime-workspace
+/SweetNotifications.sublime-workspace
+
+.DS_Store

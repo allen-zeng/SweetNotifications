@@ -1,26 +1,26 @@
 import UIKit
 
-@testable import SwiftNotifications
+@testable import SweetNotifications
 
 class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet
     private weak var testResultLabel: UILabel!
 
     private var foundationNotificationListener: NSObjectProtocol!
-    private var swiftNotificationsListener: NSObjectProtocol!
+    private var SweetNotificationsListener: NSObjectProtocol!
 
     private var foundationNotification: Notification?
-    private var swiftNotification: KeyboardNotification?
+    private var SweetNotification: KeyboardNotification?
 
     deinit {
         NotificationCenter.default.removeObserver(foundationNotificationListener)
-        NotificationCenter.default.removeObserver(swiftNotificationsListener)
+        NotificationCenter.default.removeObserver(SweetNotificationsListener)
     }
 
     var test: Test! {
         didSet {
-            if let swiftNotificationsListener = swiftNotificationsListener {
-                NotificationCenter.default.removeObserver(swiftNotificationsListener)
+            if let SweetNotificationsListener = SweetNotificationsListener {
+                NotificationCenter.default.removeObserver(SweetNotificationsListener)
             }
 
             if let foundationNotificationListener = foundationNotificationListener {
@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
             switch test! {
             case .willShow:
-                swiftNotificationsListener = NotificationCenter.default
+                SweetNotificationsListener = NotificationCenter.default
                     .watch { [weak self] (notification: UIKeyboardWillShowNotification) in
                         self?.record(notification)
                     }
@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             self?.record(notification)
                         })
             case .didShow:
-                swiftNotificationsListener = NotificationCenter.default
+                SweetNotificationsListener = NotificationCenter.default
                     .watch { [weak self] (notification: UIKeyboardDidShowNotification) in
                         self?.record(notification)
                     }
@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             self?.record(notification)
                         })
             case .willHide:
-                swiftNotificationsListener = NotificationCenter.default
+                SweetNotificationsListener = NotificationCenter.default
                     .watch { [weak self] (notification: UIKeyboardWillHideNotification) in
                         self?.record(notification)
                     }
@@ -71,7 +71,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             self?.record(notification)
                         })
             case .didHide:
-                swiftNotificationsListener = NotificationCenter.default
+                SweetNotificationsListener = NotificationCenter.default
                     .watch { [weak self] (notification: UIKeyboardDidHideNotification) in
                         self?.record(notification)
                     }
@@ -101,31 +101,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     private func record(_ notification: UIKeyboardWillShowNotification) {
-        swiftNotification = notification
+        SweetNotification = notification
 
         compareNotificationsIfPossible()
     }
 
     private func record(_ notification: UIKeyboardDidShowNotification) {
-        swiftNotification = notification
+        SweetNotification = notification
 
         compareNotificationsIfPossible()
     }
 
     private func record(_ notification: UIKeyboardWillHideNotification) {
-        swiftNotification = notification
+        SweetNotification = notification
 
         compareNotificationsIfPossible()
     }
 
     private func record(_ notification: UIKeyboardDidHideNotification) {
-        swiftNotification = notification
+        SweetNotification = notification
 
         compareNotificationsIfPossible()
     }
 
     private func compareNotificationsIfPossible() {
-        guard let foundationNotification = foundationNotification, let swiftNotification = swiftNotification else {
+        guard let foundationNotification = foundationNotification, let SweetNotification = SweetNotification else {
             testResultLabel.text = "Waiting for more notifications..."
 
             return
@@ -143,7 +143,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return
         }
 
-        if swiftNotification.frameBegin != frameBegin {
+        if SweetNotification.frameBegin != frameBegin {
             testResultLabel.text = "frameBegin compare fails"
 
             return
@@ -155,7 +155,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return
         }
 
-        if swiftNotification.frameEnd != frameEnd {
+        if SweetNotification.frameEnd != frameEnd {
             testResultLabel.text = "frameEnd compare fails"
 
             return
@@ -168,7 +168,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return
         }
 
-        if swiftNotification.animationDuration != animationDuration {
+        if SweetNotification.animationDuration != animationDuration {
             testResultLabel.text = "animationDuration compare fails"
 
             return
@@ -180,7 +180,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return
         }
 
-        if swiftNotification.isCurrentApp != isCurrentApp {
+        if SweetNotification.isCurrentApp != isCurrentApp {
             testResultLabel.text = "isCurrentApp compare fails"
 
             return

@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import SwiftNotifications
+@testable import SweetNotifications
 
 class SerializableNotificationTests: XCTestCase {
     private var listener: NSObjectProtocol?

@@ -15,16 +15,16 @@
 		9F19FFE81E5F955F0046013D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F19FFE61E5F955F0046013D /* Main.storyboard */; };
 		9F19FFEA1E5F955F0046013D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F19FFE91E5F955F0046013D /* Assets.xcassets */; };
 		9F19FFED1E5F955F0046013D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F19FFEB1E5F955F0046013D /* LaunchScreen.storyboard */; };
-		9F19FFF41E5F956E0046013D /* SwiftNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBE0F551E095EB600604C8F /* SwiftNotifications.framework */; };
-		9F19FFF51E5F956E0046013D /* SwiftNotifications.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBE0F551E095EB600604C8F /* SwiftNotifications.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F19FFF41E5F956E0046013D /* SweetNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBE0F551E095EB600604C8F /* SweetNotifications.framework */; };
+		9F19FFF51E5F956E0046013D /* SweetNotifications.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBE0F551E095EB600604C8F /* SweetNotifications.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F19FFFA1E5F95BE0046013D /* UIKeyboardNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F19FFF91E5F95BE0046013D /* UIKeyboardNotificationTests.swift */; };
 		9F2F6A8E1EB602C80002616F /* UIKeyboardNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F6A8D1EB602C80002616F /* UIKeyboardNotifications.swift */; };
 		9F2F6A901EB60BA60002616F /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F6A8F1EB60BA60002616F /* EntryViewController.swift */; };
 		9F7AA9C51E0CF76100F01F62 /* NotificationCenter+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AA9C11E0CF76100F01F62 /* NotificationCenter+Serialization.swift */; };
 		9F7AA9C61E0CF76100F01F62 /* SerializableNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AA9C21E0CF76100F01F62 /* SerializableNotification.swift */; };
-		9F7AA9C71E0CF76100F01F62 /* SwiftNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7AA9C31E0CF76100F01F62 /* SwiftNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F7AA9CC1E0D08B200F01F62 /* SwiftNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AA9C91E0CF77800F01F62 /* SwiftNotificationsTests.swift */; };
-		9FBE0F5F1E095EB600604C8F /* SwiftNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBE0F551E095EB600604C8F /* SwiftNotifications.framework */; };
+		9F7AA9C71E0CF76100F01F62 /* SweetNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7AA9C31E0CF76100F01F62 /* SweetNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7AA9CC1E0D08B200F01F62 /* SweetNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AA9C91E0CF77800F01F62 /* SweetNotificationsTests.swift */; };
+		9FBE0F5F1E095EB600604C8F /* SweetNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBE0F551E095EB600604C8F /* SweetNotifications.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,14 +33,14 @@
 			containerPortal = 9FBE0F4C1E095EB600604C8F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9F19FFDF1E5F955F0046013D;
-			remoteInfo = SwiftNotificationsUITestHost;
+			remoteInfo = SweetNotificationsUITestHost;
 		};
 		9F19FFF61E5F956E0046013D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FBE0F4C1E095EB600604C8F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9FBE0F541E095EB600604C8F;
-			remoteInfo = SwiftNotifications;
+			remoteInfo = SweetNotifications;
 		};
 		9FBE0F601E095EB600604C8F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -58,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F19FFF51E5F956E0046013D /* SwiftNotifications.framework in Embed Frameworks */,
+				9F19FFF51E5F956E0046013D /* SweetNotifications.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,12 +66,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9F039E3F1E5C6FB400250555 /* DeserializableNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeserializableNotification.swift; path = SwiftNotifications/DeserializableNotification.swift; sourceTree = SOURCE_ROOT; };
-		9F039E401E5C6FB400250555 /* NamedNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NamedNotification.swift; path = SwiftNotifications/NamedNotification.swift; sourceTree = SOURCE_ROOT; };
-		9F039E411E5C6FB400250555 /* NotificationSerializationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationSerializationError.swift; path = SwiftNotifications/NotificationSerializationError.swift; sourceTree = SOURCE_ROOT; };
-		9F19FFD41E5F953D0046013D /* SwiftNotificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNotificationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F039E3F1E5C6FB400250555 /* DeserializableNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeserializableNotification.swift; path = SweetNotifications/DeserializableNotification.swift; sourceTree = SOURCE_ROOT; };
+		9F039E401E5C6FB400250555 /* NamedNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NamedNotification.swift; path = SweetNotifications/NamedNotification.swift; sourceTree = SOURCE_ROOT; };
+		9F039E411E5C6FB400250555 /* NotificationSerializationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationSerializationError.swift; path = SweetNotifications/NotificationSerializationError.swift; sourceTree = SOURCE_ROOT; };
+		9F19FFD41E5F953D0046013D /* SweetNotificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetNotificationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F19FFD81E5F953D0046013D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F19FFE01E5F955F0046013D /* SwiftNotificationsUITestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNotificationsUITestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F19FFE01E5F955F0046013D /* SweetNotificationsUITestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetNotificationsUITestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F19FFE21E5F955F0046013D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F19FFE41E5F955F0046013D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F19FFE71E5F955F0046013D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,16 +79,16 @@
 		9F19FFEC1E5F955F0046013D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F19FFEE1E5F955F0046013D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F19FFF91E5F95BE0046013D /* UIKeyboardNotificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKeyboardNotificationTests.swift; sourceTree = "<group>"; };
-		9F2F6A8D1EB602C80002616F /* UIKeyboardNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIKeyboardNotifications.swift; path = SwiftNotifications/UIKeyboardNotifications/UIKeyboardNotifications.swift; sourceTree = SOURCE_ROOT; };
+		9F2F6A8D1EB602C80002616F /* UIKeyboardNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIKeyboardNotifications.swift; path = SweetNotifications/UIKeyboardNotifications/UIKeyboardNotifications.swift; sourceTree = SOURCE_ROOT; };
 		9F2F6A8F1EB60BA60002616F /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
-		9F7AA9C01E0CF76100F01F62 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftNotifications/Info.plist; sourceTree = SOURCE_ROOT; };
-		9F7AA9C11E0CF76100F01F62 /* NotificationCenter+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+Serialization.swift"; path = "SwiftNotifications/NotificationCenter+Serialization.swift"; sourceTree = SOURCE_ROOT; };
-		9F7AA9C21E0CF76100F01F62 /* SerializableNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SerializableNotification.swift; path = SwiftNotifications/SerializableNotification.swift; sourceTree = SOURCE_ROOT; };
-		9F7AA9C31E0CF76100F01F62 /* SwiftNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftNotifications.h; path = SwiftNotifications/SwiftNotifications.h; sourceTree = SOURCE_ROOT; };
-		9F7AA9C81E0CF77800F01F62 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftNotificationsTests/Info.plist; sourceTree = SOURCE_ROOT; };
-		9F7AA9C91E0CF77800F01F62 /* SwiftNotificationsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftNotificationsTests.swift; path = SwiftNotificationsTests/SwiftNotificationsTests.swift; sourceTree = SOURCE_ROOT; };
-		9FBE0F551E095EB600604C8F /* SwiftNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FBE0F5E1E095EB600604C8F /* SwiftNotificationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNotificationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7AA9C01E0CF76100F01F62 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SweetNotifications/Info.plist; sourceTree = SOURCE_ROOT; };
+		9F7AA9C11E0CF76100F01F62 /* NotificationCenter+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+Serialization.swift"; path = "SweetNotifications/NotificationCenter+Serialization.swift"; sourceTree = SOURCE_ROOT; };
+		9F7AA9C21E0CF76100F01F62 /* SerializableNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SerializableNotification.swift; path = SweetNotifications/SerializableNotification.swift; sourceTree = SOURCE_ROOT; };
+		9F7AA9C31E0CF76100F01F62 /* SweetNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SweetNotifications.h; path = SweetNotifications/SweetNotifications.h; sourceTree = SOURCE_ROOT; };
+		9F7AA9C81E0CF77800F01F62 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SweetNotificationsTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		9F7AA9C91E0CF77800F01F62 /* SweetNotificationsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SweetNotificationsTests.swift; path = SweetNotificationsTests/SweetNotificationsTests.swift; sourceTree = SOURCE_ROOT; };
+		9FBE0F551E095EB600604C8F /* SweetNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FBE0F5E1E095EB600604C8F /* SweetNotificationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetNotificationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F19FFF41E5F956E0046013D /* SwiftNotifications.framework in Frameworks */,
+				9F19FFF41E5F956E0046013D /* SweetNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,23 +118,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FBE0F5F1E095EB600604C8F /* SwiftNotifications.framework in Frameworks */,
+				9FBE0F5F1E095EB600604C8F /* SweetNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9F19FFD51E5F953D0046013D /* SwiftNotificationsUITests */ = {
+		9F19FFD51E5F953D0046013D /* SweetNotificationsUITests */ = {
 			isa = PBXGroup;
 			children = (
 				9F19FFF91E5F95BE0046013D /* UIKeyboardNotificationTests.swift */,
 				9F19FFD81E5F953D0046013D /* Info.plist */,
 			);
-			path = SwiftNotificationsUITests;
+			path = SweetNotificationsUITests;
 			sourceTree = "<group>";
 		};
-		9F19FFE11E5F955F0046013D /* SwiftNotificationsUITestHost */ = {
+		9F19FFE11E5F955F0046013D /* SweetNotificationsUITestHost */ = {
 			isa = PBXGroup;
 			children = (
 				9F2F6A8F1EB60BA60002616F /* EntryViewController.swift */,
@@ -145,7 +145,7 @@
 				9F19FFEB1E5F955F0046013D /* LaunchScreen.storyboard */,
 				9F19FFEE1E5F955F0046013D /* Info.plist */,
 			);
-			path = SwiftNotificationsUITestHost;
+			path = SweetNotificationsUITestHost;
 			sourceTree = "<group>";
 		};
 		9F2F6A8C1EB602B10002616F /* UIKeyboardNotifications */ = {
@@ -159,10 +159,10 @@
 		9FBE0F4B1E095EB600604C8F = {
 			isa = PBXGroup;
 			children = (
-				9FBE0F571E095EB600604C8F /* SwiftNotifications */,
-				9FBE0F621E095EB600604C8F /* SwiftNotificationsTests */,
-				9F19FFD51E5F953D0046013D /* SwiftNotificationsUITests */,
-				9F19FFE11E5F955F0046013D /* SwiftNotificationsUITestHost */,
+				9FBE0F571E095EB600604C8F /* SweetNotifications */,
+				9FBE0F621E095EB600604C8F /* SweetNotificationsTests */,
+				9F19FFD51E5F953D0046013D /* SweetNotificationsUITests */,
+				9F19FFE11E5F955F0046013D /* SweetNotificationsUITestHost */,
 				9FBE0F561E095EB600604C8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,15 +170,15 @@
 		9FBE0F561E095EB600604C8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9FBE0F551E095EB600604C8F /* SwiftNotifications.framework */,
-				9FBE0F5E1E095EB600604C8F /* SwiftNotificationsTests.xctest */,
-				9F19FFD41E5F953D0046013D /* SwiftNotificationsUITests.xctest */,
-				9F19FFE01E5F955F0046013D /* SwiftNotificationsUITestHost.app */,
+				9FBE0F551E095EB600604C8F /* SweetNotifications.framework */,
+				9FBE0F5E1E095EB600604C8F /* SweetNotificationsTests.xctest */,
+				9F19FFD41E5F953D0046013D /* SweetNotificationsUITests.xctest */,
+				9F19FFE01E5F955F0046013D /* SweetNotificationsUITestHost.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9FBE0F571E095EB600604C8F /* SwiftNotifications */ = {
+		9FBE0F571E095EB600604C8F /* SweetNotifications */ = {
 			isa = PBXGroup;
 			children = (
 				9F2F6A8C1EB602B10002616F /* UIKeyboardNotifications */,
@@ -188,19 +188,19 @@
 				9F7AA9C11E0CF76100F01F62 /* NotificationCenter+Serialization.swift */,
 				9F039E411E5C6FB400250555 /* NotificationSerializationError.swift */,
 				9F7AA9C21E0CF76100F01F62 /* SerializableNotification.swift */,
-				9F7AA9C31E0CF76100F01F62 /* SwiftNotifications.h */,
+				9F7AA9C31E0CF76100F01F62 /* SweetNotifications.h */,
 			);
-			name = SwiftNotifications;
+			name = SweetNotifications;
 			path = SerializableNotification;
 			sourceTree = "<group>";
 		};
-		9FBE0F621E095EB600604C8F /* SwiftNotificationsTests */ = {
+		9FBE0F621E095EB600604C8F /* SweetNotificationsTests */ = {
 			isa = PBXGroup;
 			children = (
 				9F7AA9C81E0CF77800F01F62 /* Info.plist */,
-				9F7AA9C91E0CF77800F01F62 /* SwiftNotificationsTests.swift */,
+				9F7AA9C91E0CF77800F01F62 /* SweetNotificationsTests.swift */,
 			);
-			name = SwiftNotificationsTests;
+			name = SweetNotificationsTests;
 			path = SerializableNotificationTests;
 			sourceTree = "<group>";
 		};
@@ -211,16 +211,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F7AA9C71E0CF76100F01F62 /* SwiftNotifications.h in Headers */,
+				9F7AA9C71E0CF76100F01F62 /* SweetNotifications.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9F19FFD31E5F953D0046013D /* SwiftNotificationsUITests */ = {
+		9F19FFD31E5F953D0046013D /* SweetNotificationsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F19FFD91E5F953D0046013D /* Build configuration list for PBXNativeTarget "SwiftNotificationsUITests" */;
+			buildConfigurationList = 9F19FFD91E5F953D0046013D /* Build configuration list for PBXNativeTarget "SweetNotificationsUITests" */;
 			buildPhases = (
 				9F19FFD01E5F953D0046013D /* Sources */,
 				9F19FFD11E5F953D0046013D /* Frameworks */,
@@ -231,14 +231,14 @@
 			dependencies = (
 				9F19FFF31E5F95640046013D /* PBXTargetDependency */,
 			);
-			name = SwiftNotificationsUITests;
-			productName = SwiftNotificationsUITests;
-			productReference = 9F19FFD41E5F953D0046013D /* SwiftNotificationsUITests.xctest */;
+			name = SweetNotificationsUITests;
+			productName = SweetNotificationsUITests;
+			productReference = 9F19FFD41E5F953D0046013D /* SweetNotificationsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		9F19FFDF1E5F955F0046013D /* SwiftNotificationsUITestHost */ = {
+		9F19FFDF1E5F955F0046013D /* SweetNotificationsUITestHost */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F19FFEF1E5F955F0046013D /* Build configuration list for PBXNativeTarget "SwiftNotificationsUITestHost" */;
+			buildConfigurationList = 9F19FFEF1E5F955F0046013D /* Build configuration list for PBXNativeTarget "SweetNotificationsUITestHost" */;
 			buildPhases = (
 				9F19FFDC1E5F955F0046013D /* Sources */,
 				9F19FFDD1E5F955F0046013D /* Frameworks */,
@@ -250,14 +250,14 @@
 			dependencies = (
 				9F19FFF71E5F956E0046013D /* PBXTargetDependency */,
 			);
-			name = SwiftNotificationsUITestHost;
-			productName = SwiftNotificationsUITestHost;
-			productReference = 9F19FFE01E5F955F0046013D /* SwiftNotificationsUITestHost.app */;
+			name = SweetNotificationsUITestHost;
+			productName = SweetNotificationsUITestHost;
+			productReference = 9F19FFE01E5F955F0046013D /* SweetNotificationsUITestHost.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9FBE0F541E095EB600604C8F /* SwiftNotifications */ = {
+		9FBE0F541E095EB600604C8F /* SweetNotifications */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FBE0F691E095EB600604C8F /* Build configuration list for PBXNativeTarget "SwiftNotifications" */;
+			buildConfigurationList = 9FBE0F691E095EB600604C8F /* Build configuration list for PBXNativeTarget "SweetNotifications" */;
 			buildPhases = (
 				9FBE0F501E095EB600604C8F /* Sources */,
 				9FBE0F511E095EB600604C8F /* Frameworks */,
@@ -268,14 +268,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftNotifications;
+			name = SweetNotifications;
 			productName = SerializableNotification;
-			productReference = 9FBE0F551E095EB600604C8F /* SwiftNotifications.framework */;
+			productReference = 9FBE0F551E095EB600604C8F /* SweetNotifications.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9FBE0F5D1E095EB600604C8F /* SwiftNotificationsTests */ = {
+		9FBE0F5D1E095EB600604C8F /* SweetNotificationsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FBE0F6C1E095EB600604C8F /* Build configuration list for PBXNativeTarget "SwiftNotificationsTests" */;
+			buildConfigurationList = 9FBE0F6C1E095EB600604C8F /* Build configuration list for PBXNativeTarget "SweetNotificationsTests" */;
 			buildPhases = (
 				9FBE0F5A1E095EB600604C8F /* Sources */,
 				9FBE0F5B1E095EB600604C8F /* Frameworks */,
@@ -286,9 +286,9 @@
 			dependencies = (
 				9FBE0F611E095EB600604C8F /* PBXTargetDependency */,
 			);
-			name = SwiftNotificationsTests;
+			name = SweetNotificationsTests;
 			productName = SerializableNotificationTests;
-			productReference = 9FBE0F5E1E095EB600604C8F /* SwiftNotificationsTests.xctest */;
+			productReference = 9FBE0F5E1E095EB600604C8F /* SweetNotificationsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -321,7 +321,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9FBE0F4F1E095EB600604C8F /* Build configuration list for PBXProject "SwiftNotifications" */;
+			buildConfigurationList = 9FBE0F4F1E095EB600604C8F /* Build configuration list for PBXProject "SweetNotifications" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -334,10 +334,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9FBE0F541E095EB600604C8F /* SwiftNotifications */,
-				9FBE0F5D1E095EB600604C8F /* SwiftNotificationsTests */,
-				9F19FFD31E5F953D0046013D /* SwiftNotificationsUITests */,
-				9F19FFDF1E5F955F0046013D /* SwiftNotificationsUITestHost */,
+				9FBE0F541E095EB600604C8F /* SweetNotifications */,
+				9FBE0F5D1E095EB600604C8F /* SweetNotificationsTests */,
+				9F19FFD31E5F953D0046013D /* SweetNotificationsUITests */,
+				9F19FFDF1E5F955F0046013D /* SweetNotificationsUITestHost */,
 			);
 		};
 /* End PBXProject section */
@@ -412,7 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F7AA9CC1E0D08B200F01F62 /* SwiftNotificationsTests.swift in Sources */,
+				9F7AA9CC1E0D08B200F01F62 /* SweetNotificationsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,17 +421,17 @@
 /* Begin PBXTargetDependency section */
 		9F19FFF31E5F95640046013D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9F19FFDF1E5F955F0046013D /* SwiftNotificationsUITestHost */;
+			target = 9F19FFDF1E5F955F0046013D /* SweetNotificationsUITestHost */;
 			targetProxy = 9F19FFF21E5F95640046013D /* PBXContainerItemProxy */;
 		};
 		9F19FFF71E5F956E0046013D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9FBE0F541E095EB600604C8F /* SwiftNotifications */;
+			target = 9FBE0F541E095EB600604C8F /* SweetNotifications */;
 			targetProxy = 9F19FFF61E5F956E0046013D /* PBXContainerItemProxy */;
 		};
 		9FBE0F611E095EB600604C8F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9FBE0F541E095EB600604C8F /* SwiftNotifications */;
+			target = 9FBE0F541E095EB600604C8F /* SweetNotifications */;
 			targetProxy = 9FBE0F601E095EB600604C8F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -460,13 +460,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				INFOPLIST_FILE = SwiftNotificationsUITests/Info.plist;
+				INFOPLIST_FILE = SweetNotificationsUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SwiftNotificationsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SweetNotificationsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = SwiftNotificationsUITestHost;
+				TEST_TARGET_NAME = SweetNotificationsUITestHost;
 			};
 			name = Debug;
 		};
@@ -474,13 +474,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				INFOPLIST_FILE = SwiftNotificationsUITests/Info.plist;
+				INFOPLIST_FILE = SweetNotificationsUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SwiftNotificationsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SweetNotificationsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = SwiftNotificationsUITestHost;
+				TEST_TARGET_NAME = SweetNotificationsUITestHost;
 			};
 			name = Release;
 		};
@@ -490,10 +490,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				INFOPLIST_FILE = SwiftNotificationsUITestHost/Info.plist;
+				INFOPLIST_FILE = SweetNotificationsUITestHost/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SwiftNotificationsUITestHost;
+				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SweetNotificationsUITestHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -505,10 +505,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				INFOPLIST_FILE = SwiftNotificationsUITestHost/Info.plist;
+				INFOPLIST_FILE = SweetNotificationsUITestHost/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SwiftNotificationsUITestHost;
+				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SweetNotificationsUITestHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -623,10 +623,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftNotifications/Info.plist;
+				INFOPLIST_FILE = SweetNotifications/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SwiftNotifications;
+				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SweetNotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -644,10 +644,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftNotifications/Info.plist;
+				INFOPLIST_FILE = SweetNotifications/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SwiftNotifications;
+				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SweetNotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -659,9 +659,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SwiftNotificationsTests/Info.plist;
+				INFOPLIST_FILE = SweetNotificationsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SwiftNotificationsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SweetNotificationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -672,9 +672,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SwiftNotificationsTests/Info.plist;
+				INFOPLIST_FILE = SweetNotificationsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SwiftNotificationsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = allenzeng.SweetNotificationsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -683,7 +683,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F19FFD91E5F953D0046013D /* Build configuration list for PBXNativeTarget "SwiftNotificationsUITests" */ = {
+		9F19FFD91E5F953D0046013D /* Build configuration list for PBXNativeTarget "SweetNotificationsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F19FFDA1E5F953D0046013D /* Debug */,
@@ -692,7 +692,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F19FFEF1E5F955F0046013D /* Build configuration list for PBXNativeTarget "SwiftNotificationsUITestHost" */ = {
+		9F19FFEF1E5F955F0046013D /* Build configuration list for PBXNativeTarget "SweetNotificationsUITestHost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F19FFF01E5F955F0046013D /* Debug */,
@@ -701,7 +701,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FBE0F4F1E095EB600604C8F /* Build configuration list for PBXProject "SwiftNotifications" */ = {
+		9FBE0F4F1E095EB600604C8F /* Build configuration list for PBXProject "SweetNotifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FBE0F671E095EB600604C8F /* Debug */,
@@ -710,7 +710,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FBE0F691E095EB600604C8F /* Build configuration list for PBXNativeTarget "SwiftNotifications" */ = {
+		9FBE0F691E095EB600604C8F /* Build configuration list for PBXNativeTarget "SweetNotifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FBE0F6A1E095EB600604C8F /* Debug */,
@@ -719,7 +719,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FBE0F6C1E095EB600604C8F /* Build configuration list for PBXNativeTarget "SwiftNotificationsTests" */ = {
+		9FBE0F6C1E095EB600604C8F /* Build configuration list for PBXNativeTarget "SweetNotificationsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FBE0F6D1E095EB600604C8F /* Debug */,
