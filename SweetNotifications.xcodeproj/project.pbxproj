@@ -194,7 +194,6 @@
 				9F7AA9C31E0CF76100F01F62 /* SweetNotifications.h */,
 			);
 			name = SweetNotifications;
-			path = SerializableNotification;
 			sourceTree = "<group>";
 		};
 		9FBE0F621E095EB600604C8F /* SweetNotificationsTests */ = {
@@ -204,7 +203,6 @@
 				9F7AA9C91E0CF77800F01F62 /* SweetNotificationsTests.swift */,
 			);
 			name = SweetNotificationsTests;
-			path = SerializableNotificationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
