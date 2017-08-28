@@ -36,7 +36,7 @@ public extension NotificationCenter {
         for name: Notification.Name,
         object: AnyObject? = nil,
         queue: OperationQueue = OperationQueue.main,
-        handler: @escaping (Void) -> Void) -> NSObjectProtocol
+        handler: @escaping () -> Void) -> NSObjectProtocol
     {
         return addObserver(forName: name, object: object, queue: queue) { _ in
             handler()
