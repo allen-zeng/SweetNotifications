@@ -10,7 +10,11 @@ Pod::Spec.new do |s|
     :git => "https://github.com/allen-zeng/SweetNotifications.git",
     :tag => s.version }
 
-  s.platform     = :ios, '9.0'
+  s.ios.deployment_target = '9.0'
+  s.osx.deployment_target = '10.10'
+  s.watchos.deployment_target = '2.0'
+  s.tvos.deployment_target = '9.0'
+  
   s.requires_arc = true
 
   s.subspec 'Core' do |ss|
