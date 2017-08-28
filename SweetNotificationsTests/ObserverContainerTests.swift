@@ -48,7 +48,7 @@ private struct TestNotification: SweetNotification {
         self.init()
     }
 
-    func toUserInfo() -> [AnyHashable: Any]? {
+    func toUserInfo() -> [AnyHashable: Any] {
         return [:]
     }
 }

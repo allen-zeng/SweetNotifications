@@ -171,7 +171,7 @@ class SerializableNotificationTests: XCTestCase {
             self.number = number
         }
 
-        func toUserInfo() -> [AnyHashable: Any]? {
+        func toUserInfo() -> [AnyHashable: Any] {
             return [
                 "string": string,
                 "number": number]
