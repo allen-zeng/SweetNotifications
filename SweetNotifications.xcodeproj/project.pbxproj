@@ -254,6 +254,7 @@
 				9F19FFDD1E5F955F0046013D /* Frameworks */,
 				9F19FFDE1E5F955F0046013D /* Resources */,
 				9F19FFF81E5F956E0046013D /* Embed Frameworks */,
+				9F2FAE761F544CB000DE1EDC /* Ensure software keyboard shows */,
 			);
 			buildRules = (
 			);
@@ -385,6 +386,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F2FAE761F544CB000DE1EDC /* Ensure software keyboard shows */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Ensure software keyboard shows";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcrun simctl shutdown all\n\ndefaults write com.apple.iphonesimulator ConnectHardwareKeyboard -bool NO";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F19FFD01E5F953D0046013D /* Sources */ = {
