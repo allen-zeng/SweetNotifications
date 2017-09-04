@@ -27,11 +27,10 @@ listener = NotificationCenter.default.watch { (notification: UIKeyboardWillShowN
 }
 ```
 
-Don't forget to deregister later:
+Don't forget to remove the observer later, (or see [automatic dereigstrations](#automatic-deregistration)):
 ```swift
 NotificationCenter.default.removeObserver(listener)
 ```
-__Note:__ Support for self registration coming soon
 
 ### Listening for named events only
 There are notifications that don't contain a `userInfo` dictionary. In those situations we can simply watch for the named events:
@@ -40,7 +39,23 @@ listener = NotificationCenter.default.watch(for: Notification.Name.UIApplication
     // save all the important things!
 }
 ```
-As of this moment, manual deregistration is still required.
+
+### Automatic deregistration
+Remembering to remove observers can be a little annoying, not to mention mundane. Use `ObserverContainer` to automatically deregister all observers on deinit:
+```swift
+// declare a property
+private let observerContainer = ObserverContainer()
+
+func initalize() {
+    let listener1 = NotificationCenter.default.watch(for: Notification.Name.dataArrived) { ... }
+    let listener2 = NotificationCenter.default.watch(for: Notification.Name.loggedOut) { ... }
+
+    observerContainer.add(listener1)
+    observerContainer.add(listener2)
+}
+
+// no need to write your own `deinit` to remove all listeners!
+```
 
 ## Custom notification types
 It's easy to write your own notification types by adopting `SweetNotification`:
